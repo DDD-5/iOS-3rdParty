@@ -1,0 +1,4 @@
+
+github "Alamofire/Alamofire" ~> 5.2
+github "SnapKit/SnapKit" ~> 5.0.0
+github "nicklockwood/iCarousel" "c9e043e1fa767f88d31de8dae95585345e8e7676"

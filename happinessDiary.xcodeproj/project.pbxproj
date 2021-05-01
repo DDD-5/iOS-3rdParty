@@ -12,6 +12,9 @@
 		456F349A263D1BA3001CA534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3499263D1BA3001CA534 /* Assets.xcassets */; };
 		456F349D263D1BA3001CA534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F349B263D1BA3001CA534 /* LaunchScreen.storyboard */; };
 		456F34BA263D1E3D001CA534 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F34B9263D1E3D001CA534 /* RootNavigationController.swift */; };
+		456F34BE263D2E5A001CA534 /* iCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34BD263D2E5A001CA534 /* iCarousel.framework */; };
+		456F34C1263D2E6C001CA534 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34C0263D2E6B001CA534 /* Alamofire.framework */; };
+		456F34C4263D2E7A001CA534 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34C3263D2E7A001CA534 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		456F349C263D1BA3001CA534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456F349E263D1BA3001CA534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		456F34B9263D1E3D001CA534 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		456F34BD263D2E5A001CA534 /* iCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCarousel.framework; path = "Carthage/Build/iCarousel.xcframework/ios-arm64_armv7/iCarousel.framework"; sourceTree = "<group>"; };
+		456F34C0263D2E6B001CA534 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Carthage/Build/Alamofire.xcframework/ios-arm64_armv7/Alamofire.framework"; sourceTree = "<group>"; };
+		456F34C3263D2E7A001CA534 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Carthage/Build/SnapKit.xcframework/ios-arm64_armv7/SnapKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456F34C4263D2E7A001CA534 /* SnapKit.framework in Frameworks */,
+				456F34C1263D2E6C001CA534 /* Alamofire.framework in Frameworks */,
+				456F34BE263D2E5A001CA534 /* iCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				456F348F263D1BA1001CA534 /* happinessDiary */,
 				456F348E263D1BA1001CA534 /* Products */,
+				456F34BC263D2E59001CA534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,16 @@
 			path = happinessDiary;
 			sourceTree = "<group>";
 		};
+		456F34BC263D2E59001CA534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456F34C3263D2E7A001CA534 /* SnapKit.framework */,
+				456F34C0263D2E6B001CA534 /* Alamofire.framework */,
+				456F34BD263D2E5A001CA534 /* iCarousel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +94,7 @@
 				456F3489263D1BA1001CA534 /* Sources */,
 				456F348A263D1BA1001CA534 /* Frameworks */,
 				456F348B263D1BA1001CA534 /* Resources */,
+				456F34C6263D2EF5001CA534 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -127,6 +148,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		456F34C6263D2EF5001CA534 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iCarousel.xcframework/ios-arm64_armv7/iCarousel.framework",
+				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64_armv7/SnapKit.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		456F3489263D1BA1001CA534 /* Sources */ = {
@@ -276,6 +321,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL8Z974T3C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iCarousel.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/SnapKit.xcframework/ios-arm64_armv7",
+				);
 				INFOPLIST_FILE = happinessDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +346,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL8Z974T3C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iCarousel.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7",
+					"$(PROJECT_DIR)/Carthage/Build/SnapKit.xcframework/ios-arm64_armv7",
+				);
 				INFOPLIST_FILE = happinessDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
