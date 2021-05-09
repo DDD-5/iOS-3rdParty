@@ -5,7 +5,7 @@
 //  Created by BeomSeok on 2021/05/08.
 //
 
-import Foundation
+import UIKit
 
 class DetailPageViewController: UIViewController {
     
