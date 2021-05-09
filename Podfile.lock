@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FLEX (4.4.1)
+  - iCarousel (1.8.3)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - FLEX
+  - iCarousel (~> 1.8)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLEX
+    - iCarousel
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 159e9f06ae171b91111b258feddf5d3bdb6c85b2
+
+COCOAPODS: 1.10.1
