@@ -3,31 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F56A9C28306E25F669B71D5 /* Pods_happinessDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCD28EFF954B13BC4484354 /* Pods_happinessDiary.framework */; };
+		452ED5332645D8A200EC3AE4 /* CalendarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ED5322645D8A200EC3AE4 /* CalendarPageViewController.swift */; };
+		452ED5372645D8B200EC3AE4 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ED5362645D8B200EC3AE4 /* DetailPageViewController.swift */; };
+		452ED53A2645D8C000EC3AE4 /* TotalPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ED5392645D8C000EC3AE4 /* TotalPageViewController.swift */; };
 		456F3491263D1BA1001CA534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F3490263D1BA1001CA534 /* AppDelegate.swift */; };
-		456F3495263D1BA1001CA534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F3494263D1BA1001CA534 /* ViewController.swift */; };
 		456F349A263D1BA3001CA534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3499263D1BA3001CA534 /* Assets.xcassets */; };
 		456F349D263D1BA3001CA534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F349B263D1BA3001CA534 /* LaunchScreen.storyboard */; };
-		456F34BA263D1E3D001CA534 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F34B9263D1E3D001CA534 /* RootNavigationController.swift */; };
-		456F34BE263D2E5A001CA534 /* iCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34BD263D2E5A001CA534 /* iCarousel.framework */; };
-		456F34C1263D2E6C001CA534 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34C0263D2E6B001CA534 /* Alamofire.framework */; };
-		456F34C4263D2E7A001CA534 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F34C3263D2E7A001CA534 /* SnapKit.framework */; };
+		456F34CB263D3C71001CA534 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F34CA263D3C71001CA534 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		452ED5322645D8A200EC3AE4 /* CalendarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPageViewController.swift; sourceTree = "<group>"; };
+		452ED5362645D8B200EC3AE4 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		452ED5392645D8C000EC3AE4 /* TotalPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPageViewController.swift; sourceTree = "<group>"; };
 		456F348D263D1BA1001CA534 /* happinessDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happinessDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456F3490263D1BA1001CA534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		456F3494263D1BA1001CA534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		456F3499263D1BA3001CA534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456F349C263D1BA3001CA534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456F349E263D1BA3001CA534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		456F34B9263D1E3D001CA534 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		456F34BD263D2E5A001CA534 /* iCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iCarousel.framework; path = "Carthage/Build/iCarousel.xcframework/ios-arm64_armv7/iCarousel.framework"; sourceTree = "<group>"; };
 		456F34C0263D2E6B001CA534 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Carthage/Build/Alamofire.xcframework/ios-arm64_armv7/Alamofire.framework"; sourceTree = "<group>"; };
 		456F34C3263D2E7A001CA534 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Carthage/Build/SnapKit.xcframework/ios-arm64_armv7/SnapKit.framework"; sourceTree = "<group>"; };
+		456F34CA263D3C71001CA534 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		B5AD47833ADD53AC17B8A1E6 /* Pods-happinessDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happinessDiary.release.xcconfig"; path = "Target Support Files/Pods-happinessDiary/Pods-happinessDiary.release.xcconfig"; sourceTree = "<group>"; };
+		BF230AC2EE2A1F29EBE5453E /* Pods-happinessDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happinessDiary.debug.xcconfig"; path = "Target Support Files/Pods-happinessDiary/Pods-happinessDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		EBCD28EFF954B13BC4484354 /* Pods_happinessDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happinessDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,21 +40,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456F34C4263D2E7A001CA534 /* SnapKit.framework in Frameworks */,
-				456F34C1263D2E6C001CA534 /* Alamofire.framework in Frameworks */,
-				456F34BE263D2E5A001CA534 /* iCarousel.framework in Frameworks */,
+				1F56A9C28306E25F669B71D5 /* Pods_happinessDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452ED52E2645D80500EC3AE4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				452ED5322645D8A200EC3AE4 /* CalendarPageViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		452ED52F2645D84400EC3AE4 /* Total */ = {
+			isa = PBXGroup;
+			children = (
+				452ED5392645D8C000EC3AE4 /* TotalPageViewController.swift */,
+			);
+			path = Total;
+			sourceTree = "<group>";
+		};
+		452ED5312645D87200EC3AE4 /* Details. */ = {
+			isa = PBXGroup;
+			children = (
+				452ED5362645D8B200EC3AE4 /* DetailPageViewController.swift */,
+			);
+			path = Details.;
+			sourceTree = "<group>";
+		};
 		456F3484263D1BA1001CA534 = {
 			isa = PBXGroup;
 			children = (
 				456F348F263D1BA1001CA534 /* happinessDiary */,
 				456F348E263D1BA1001CA534 /* Products */,
 				456F34BC263D2E59001CA534 /* Frameworks */,
+				ED5B1679B6E239B6CFBAA70A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +92,15 @@
 		456F348F263D1BA1001CA534 /* happinessDiary */ = {
 			isa = PBXGroup;
 			children = (
+				456F34C8263D3202001CA534 /* Base */,
+				452ED52E2645D80500EC3AE4 /* Calendar */,
+				452ED5312645D87200EC3AE4 /* Details. */,
+				452ED52F2645D84400EC3AE4 /* Total */,
 				456F3490263D1BA1001CA534 /* AppDelegate.swift */,
-				456F3494263D1BA1001CA534 /* ViewController.swift */,
 				456F3499263D1BA3001CA534 /* Assets.xcassets */,
 				456F349B263D1BA3001CA534 /* LaunchScreen.storyboard */,
 				456F349E263D1BA3001CA534 /* Info.plist */,
-				456F34B9263D1E3D001CA534 /* RootNavigationController.swift */,
+				456F34CA263D3C71001CA534 /* PageViewController.swift */,
 			);
 			path = happinessDiary;
 			sourceTree = "<group>";
@@ -80,8 +111,25 @@
 				456F34C3263D2E7A001CA534 /* SnapKit.framework */,
 				456F34C0263D2E6B001CA534 /* Alamofire.framework */,
 				456F34BD263D2E5A001CA534 /* iCarousel.framework */,
+				EBCD28EFF954B13BC4484354 /* Pods_happinessDiary.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		456F34C8263D3202001CA534 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ED5B1679B6E239B6CFBAA70A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF230AC2EE2A1F29EBE5453E /* Pods-happinessDiary.debug.xcconfig */,
+				B5AD47833ADD53AC17B8A1E6 /* Pods-happinessDiary.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 456F34A1263D1BA3001CA534 /* Build configuration list for PBXNativeTarget "happinessDiary" */;
 			buildPhases = (
+				909DFDEF0824B3C33848C9CB /* [CP] Check Pods Manifest.lock */,
 				456F3489263D1BA1001CA534 /* Sources */,
 				456F348A263D1BA1001CA534 /* Frameworks */,
 				456F348B263D1BA1001CA534 /* Resources */,
 				456F34C6263D2EF5001CA534 /* Run Script */,
+				2896D4B9A4E38C39CECD9447 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +200,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2896D4B9A4E38C39CECD9447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-happinessDiary/Pods-happinessDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-happinessDiary/Pods-happinessDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-happinessDiary/Pods-happinessDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		456F34C6263D2EF5001CA534 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,9 +225,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Alamofire.xcframework/ios-arm64_armv7/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iCarousel.xcframework/ios-arm64_armv7/iCarousel.framework",
-				"$(SRCROOT)/Carthage/Build/SnapKit.xcframework/ios-arm64_armv7/SnapKit.framework",
 			);
 			name = "Run Script";
 			outputFileListPaths = (
@@ -171,6 +235,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		909DFDEF0824B3C33848C9CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-happinessDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456F3495263D1BA1001CA534 /* ViewController.swift in Sources */,
+				452ED5372645D8B200EC3AE4 /* DetailPageViewController.swift in Sources */,
+				452ED53A2645D8C000EC3AE4 /* TotalPageViewController.swift in Sources */,
 				456F3491263D1BA1001CA534 /* AppDelegate.swift in Sources */,
-				456F34BA263D1E3D001CA534 /* RootNavigationController.swift in Sources */,
+				456F34CB263D3C71001CA534 /* PageViewController.swift in Sources */,
+				452ED5332645D8A200EC3AE4 /* CalendarPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +404,7 @@
 		};
 		456F34A2263D1BA3001CA534 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF230AC2EE2A1F29EBE5453E /* Pods-happinessDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +430,7 @@
 		};
 		456F34A3263D1BA3001CA534 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AD47833ADD53AC17B8A1E6 /* Pods-happinessDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
