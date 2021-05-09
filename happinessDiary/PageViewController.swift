@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import SnapKit
 import FLEX
 
 class PageViewController: UIPageViewController {
     
-    private let backgroundColors: [UIColor] = [.green, .blue, .brown, .yellow, .lightGray]
+    private let backgroundColors: [UIColor] = [.green, .blue, .brown]
+    var pages: [UIViewController] = []
 
     private let pageControl: UIPageControl = {
         let pc = UIPageControl()
@@ -30,53 +32,55 @@ class PageViewController: UIPageViewController {
         dataSource = self
         delegate = self
         
-        let firstVC = instantiateViewController(index: 0, color: backgroundColors[0])
-        setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        let calendarVC = CalendarPageViewController()
+        calendarVC.view.tag = 0
+        calendarVC.view.backgroundColor = backgroundColors[0]
+        
+        let detailVC = DetailPageViewController()
+        detailVC.view.tag = 1
+        detailVC.view.backgroundColor = backgroundColors[1]
+        
+        let totalVC = TotalPageViewController()
+        totalVC.view.tag = 2
+        totalVC.view.backgroundColor = backgroundColors[2]
+        self.pages = [calendarVC, detailVC, totalVC]
+        
+        setViewControllers([calendarVC], direction: .forward, animated: true, completion: nil)
     }
     
     private func setPageControl() {
-        pageControl.numberOfPages = backgroundColors.count
+        pageControl.numberOfPages = pages.count
         
         view.addSubview(pageControl)
-        NSLayoutConstraint.activate([
-            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
-            pageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-    }
-
-    private func instantiateViewController(index: Int, color: UIColor) -> UIViewController {
-        let vc = UIViewController()
-        vc.view.tag = index
-        vc.view.backgroundColor = color
-        return vc
+        pageControl.snp.remakeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-100)
+        }
     }
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController,
-                            viewControllerBefore viewController: UIViewController
-    ) -> UIViewController? {
+                            viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard let index = pageViewController.viewControllers?.first?.view.tag else {
+        guard let index = pages.firstIndex(of: viewController) else {
             return nil
         }
-        let nextIndex = index > 0 ? index - 1 : backgroundColors.count - 1
-        let nextVC = instantiateViewController(index: nextIndex, color: backgroundColors[nextIndex])
-        return nextVC
+        
+        let nextIndex = index > 0 ? index - 1 : pages.count - 1
+        return pages[nextIndex]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController,
-                            viewControllerAfter viewController: UIViewController
-    ) -> UIViewController? {
+                            viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        guard let index = pageViewController.viewControllers?.first?.view.tag else {
+        guard let index = pages.firstIndex(of: viewController) else {
             return nil
         }
-        let nextIndex = (index + 1) % backgroundColors.count
-        let nextVC = instantiateViewController(index: nextIndex, color: backgroundColors[nextIndex])
-        return nextVC
+        
+        let nextIndex = (index + 1) % pages.count
+        return pages[nextIndex]
     }
 }
 
@@ -85,8 +89,7 @@ extension PageViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController,
                             didFinishAnimating finished: Bool,
                             previousViewControllers: [UIViewController],
-                            transitionCompleted completed: Bool
-    ) {
+                            transitionCompleted completed: Bool) {
         guard completed else { return }
         if let vc = pageViewController.viewControllers?.first {
             pageControl.currentPage = vc.view.tag
