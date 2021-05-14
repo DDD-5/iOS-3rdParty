@@ -8,6 +8,14 @@
 import UIKit
 
 class Sizes: NSObject {
+    static var safeAreaInsets: UIEdgeInsets {
+        return UIApplication.shared.delegate?.window??.safeAreaInsets ?? .zero
+    }
+    
+    static var mainTopMenuViewHeight: CGFloat {
+        return 52
+    }
+    
     static var titleViewHeight: CGFloat {
         return 162
     }

@@ -14,8 +14,8 @@ enum PageType: CaseIterable {
 
 class PageViewController: UIViewController {
     
-    var topView: UIView?
-    var titleView: UIView?
+    var topMenuView: UIView?
+    var titleView: TitleView?
     
     let pageType: PageType
     
@@ -40,10 +40,20 @@ class PageViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = Colors.backgroundGray
         
+        let topMenuView = UIView()
+        topMenuView.backgroundColor = Colors.black
+        view.addSubview(topMenuView)
+        topMenuView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(Sizes.safeAreaInsets.top)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(Sizes.mainTopMenuViewHeight)
+        }
+        self.topMenuView = topMenuView
+        
         let titleView = TitleView()
         view.addSubview(titleView)
         titleView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(52)
+            make.top.equalTo(topMenuView.snp.bottom)
             make.left.right.equalToSuperview()
             make.height.equalTo(Sizes.titleViewHeight)
         }
