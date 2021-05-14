@@ -9,9 +9,8 @@ import UIKit
 import SnapKit
 import FLEX
 
-class PageViewController: UIPageViewController {
+class PagesViewController: UIPageViewController {
     
-    private let backgroundColors: [UIColor] = [.green, .blue, .brown]
     var pages: [UIViewController] = []
 
     private let pageControl: UIPageControl = {
@@ -32,17 +31,14 @@ class PageViewController: UIPageViewController {
         dataSource = self
         delegate = self
         
-        let calendarVC = CalendarPageViewController()
+        let calendarVC = CalendarPageViewController(pageType: .calendar)
         calendarVC.view.tag = 0
-        calendarVC.view.backgroundColor = backgroundColors[0]
         
-        let detailVC = DetailPageViewController()
+        let detailVC = DetailPageViewController(pageType: .detail)
         detailVC.view.tag = 1
-        detailVC.view.backgroundColor = backgroundColors[1]
         
-        let totalVC = TotalPageViewController()
+        let totalVC = TotalPageViewController(pageType: .total)
         totalVC.view.tag = 2
-        totalVC.view.backgroundColor = backgroundColors[2]
         self.pages = [calendarVC, detailVC, totalVC]
         
         setViewControllers([calendarVC], direction: .forward, animated: true, completion: nil)
@@ -59,7 +55,7 @@ class PageViewController: UIPageViewController {
     }
 }
 
-extension PageViewController: UIPageViewControllerDataSource {
+extension PagesViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -84,7 +80,7 @@ extension PageViewController: UIPageViewControllerDataSource {
     }
 }
 
-extension PageViewController: UIPageViewControllerDelegate {
+extension PagesViewController: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController,
                             didFinishAnimating finished: Bool,
@@ -97,7 +93,7 @@ extension PageViewController: UIPageViewControllerDelegate {
     }
 }
 
-extension PageViewController {
+extension PagesViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             FLEXManager.shared.showExplorer()

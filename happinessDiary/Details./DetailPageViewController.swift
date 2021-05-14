@@ -7,6 +7,6 @@
 
 import UIKit
 
-class DetailPageViewController: UIViewController {
+class DetailPageViewController: PageViewController {
     
 }

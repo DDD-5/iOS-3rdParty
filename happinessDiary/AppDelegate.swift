@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let pageVC = PageViewController(transitionStyle: .scroll,
+        let pageVC = PagesViewController(transitionStyle: .scroll,
                                         navigationOrientation: .horizontal,
                                         options: nil)
         window?.rootViewController = pageVC

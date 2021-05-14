@@ -7,6 +7,6 @@
 
 import UIKit
 
-class TotalPageViewController: UIViewController {
+class TotalPageViewController: PageViewController {
     
 }

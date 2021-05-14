@@ -7,6 +7,6 @@
 
 import UIKit
 
-class CalendarPageViewController: UIViewController {
+class CalendarPageViewController: PageViewController {
     
 }
