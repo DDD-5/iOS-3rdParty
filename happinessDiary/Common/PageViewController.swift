@@ -14,7 +14,7 @@ enum PageType: CaseIterable {
 
 class PageViewController: UIViewController {
     
-    var topMenuView: UIView?
+    var topMenuView: TopMenuView?
     var titleView: TitleView?
     
     let pageType: PageType
@@ -40,8 +40,7 @@ class PageViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = Colors.backgroundGray
         
-        let topMenuView = UIView()
-        topMenuView.backgroundColor = Colors.black
+        let topMenuView = TopMenuView()
         view.addSubview(topMenuView)
         topMenuView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(Sizes.safeAreaInsets.top)

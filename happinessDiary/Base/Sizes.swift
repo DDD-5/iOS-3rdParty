@@ -16,6 +16,10 @@ class Sizes: NSObject {
         return 52
     }
     
+    static var mainTopMenuButtonSize: CGSize {
+        return CGSize(width: 24, height: 24)
+    }
+    
     static var titleViewHeight: CGFloat {
         return 162
     }

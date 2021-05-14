@@ -17,6 +17,7 @@
 		45549399264ED8BE00C0D657 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45549398264ED8BE00C0D657 /* TitleView.swift */; };
 		4554939B264EDE0E00C0D657 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554939A264EDE0E00C0D657 /* Sizes.swift */; };
 		4554939E264EDF0400C0D657 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554939D264EDF0400C0D657 /* PageViewController.swift */; };
+		455493A2264EEAD400C0D657 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455493A1264EEAD400C0D657 /* TopMenuView.swift */; };
 		456F3491263D1BA1001CA534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F3490263D1BA1001CA534 /* AppDelegate.swift */; };
 		456F349A263D1BA3001CA534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3499263D1BA3001CA534 /* Assets.xcassets */; };
 		456F349D263D1BA3001CA534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F349B263D1BA3001CA534 /* LaunchScreen.storyboard */; };
@@ -33,6 +34,7 @@
 		45549398264ED8BE00C0D657 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		4554939A264EDE0E00C0D657 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4554939D264EDF0400C0D657 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		455493A1264EEAD400C0D657 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
 		456F348D263D1BA1001CA534 /* happinessDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happinessDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456F3490263D1BA1001CA534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456F3499263D1BA3001CA534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				45549398264ED8BE00C0D657 /* TitleView.swift */,
 				4554939D264EDF0400C0D657 /* PageViewController.swift */,
+				455493A1264EEAD400C0D657 /* TopMenuView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				452ED5372645D8B200EC3AE4 /* DetailPageViewController.swift in Sources */,
 				452ED53A2645D8C000EC3AE4 /* TotalPageViewController.swift in Sources */,
 				4554939E264EDF0400C0D657 /* PageViewController.swift in Sources */,
+				455493A2264EEAD400C0D657 /* TopMenuView.swift in Sources */,
 				456F3491263D1BA1001CA534 /* AppDelegate.swift in Sources */,
 				456F34CB263D3C71001CA534 /* PagesViewController.swift in Sources */,
 				45549383264ED41200C0D657 /* Colors.swift in Sources */,
