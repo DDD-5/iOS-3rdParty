@@ -1,5 +1,5 @@
 //
-//  ColorSet.swift
+//  Colors.swift
 //  happinessDiary
 //
 //  Created by BeomSeok on 2021/05/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorSet: NSObject {
+class Colors: NSObject {
     // MARK:- Color Utils
     static public func color(hex: Int64, alpha: Float) -> UIColor {
         let red = (hex >> 16) & 0xff

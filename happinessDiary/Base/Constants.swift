@@ -8,5 +8,7 @@
 import UIKit
 
 class Constants: NSObject {
-    
+    static var mainTitle: String {
+        return "Today's Happiness"
+    }
 }
