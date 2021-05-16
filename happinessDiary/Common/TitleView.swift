@@ -11,7 +11,7 @@ import SnapKit
 class TitleView: UIView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.font(weight: .medium, size: 27.0)
+        label.font = Fonts.font(weight: .regular, size: 27.0)
         label.text = Constants.mainTitle
         label.textColor = Colors.red
         label.textAlignment = .center

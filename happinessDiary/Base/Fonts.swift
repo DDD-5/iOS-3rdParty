@@ -9,6 +9,16 @@ import UIKit
 
 class Fonts: NSObject {
     static func font(weight: UIFont.Weight = .medium, size: CGFloat) -> UIFont {
-        return UIFont.systemFont(ofSize: size, weight: weight)
+        var font: UIFont?
+        switch weight {
+        case .bold:
+             font = UIFont(name: "BinggraeSamanco-Bold", size: size)
+        case .regular:
+            font = UIFont(name: "BinggraeSamanco", size: size)
+        default:
+            font = nil
+        }
+        
+        return font ?? UIFont.systemFont(ofSize: size, weight: weight)
     }
 }

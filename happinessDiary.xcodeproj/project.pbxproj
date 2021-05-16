@@ -18,6 +18,8 @@
 		4554939B264EDE0E00C0D657 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554939A264EDE0E00C0D657 /* Sizes.swift */; };
 		4554939E264EDF0400C0D657 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554939D264EDF0400C0D657 /* PageViewController.swift */; };
 		455493A2264EEAD400C0D657 /* TopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455493A1264EEAD400C0D657 /* TopMenuView.swift */; };
+		455493A62650EFBA00C0D657 /* BinggraeSamanco-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 455493A42650EFBA00C0D657 /* BinggraeSamanco-Bold.otf */; };
+		455493A72650EFBA00C0D657 /* BinggraeSamanco.otf in Resources */ = {isa = PBXBuildFile; fileRef = 455493A52650EFBA00C0D657 /* BinggraeSamanco.otf */; };
 		456F3491263D1BA1001CA534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F3490263D1BA1001CA534 /* AppDelegate.swift */; };
 		456F349A263D1BA3001CA534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3499263D1BA3001CA534 /* Assets.xcassets */; };
 		456F349D263D1BA3001CA534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F349B263D1BA3001CA534 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,8 @@
 		4554939A264EDE0E00C0D657 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4554939D264EDF0400C0D657 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		455493A1264EEAD400C0D657 /* TopMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuView.swift; sourceTree = "<group>"; };
+		455493A42650EFBA00C0D657 /* BinggraeSamanco-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinggraeSamanco-Bold.otf"; sourceTree = "<group>"; };
+		455493A52650EFBA00C0D657 /* BinggraeSamanco.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BinggraeSamanco.otf; sourceTree = "<group>"; };
 		456F348D263D1BA1001CA534 /* happinessDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happinessDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456F3490263D1BA1001CA534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456F3499263D1BA3001CA534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		455493A32650EF6300C0D657 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				455493A42650EFBA00C0D657 /* BinggraeSamanco-Bold.otf */,
+				455493A52650EFBA00C0D657 /* BinggraeSamanco.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		456F3484263D1BA1001CA534 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +129,7 @@
 		456F348F263D1BA1001CA534 /* happinessDiary */ = {
 			isa = PBXGroup;
 			children = (
+				455493A32650EF6300C0D657 /* Resources */,
 				456F34C8263D3202001CA534 /* Base */,
 				45549397264ED7F800C0D657 /* Common */,
 				452ED52E2645D80500EC3AE4 /* Calendar */,
@@ -221,8 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455493A62650EFBA00C0D657 /* BinggraeSamanco-Bold.otf in Resources */,
 				456F349D263D1BA3001CA534 /* LaunchScreen.storyboard in Resources */,
 				456F349A263D1BA3001CA534 /* Assets.xcassets in Resources */,
+				455493A72650EFBA00C0D657 /* BinggraeSamanco.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
